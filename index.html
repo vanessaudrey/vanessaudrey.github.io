@@ -1,0 +1,108 @@
+---
+layout: default
+title: Home
+---
+
+<section class="hero">
+  <div class="container hero__inner">
+    <div class="hero__label label">Mechanical Design Engineer</div>
+
+    <h1 class="hero__name fade-up">
+      Hi, I'm<br><em>Your Name.</em>
+    </h1>
+
+    <p class="hero__tagline fade-up">
+      I design mechanical systems that balance precision, performance, and manufacturability — from concept sketches to production-ready assemblies.
+    </p>
+
+    <div class="hero__ctas fade-up">
+      <a href="{{ '/projects' | relative_url }}" class="btn btn--primary">View Projects →</a>
+      <a href="{{ '/assets/resume.pdf' | relative_url }}" class="btn btn--outline" target="_blank">Download Resume ↗</a>
+    </div>
+
+    <div class="hero__stats fade-up">
+      <div class="stat">
+        <div class="stat__num">5+</div>
+        <div class="stat__label">Years Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">20+</div>
+        <div class="stat__label">Projects Completed</div>
+      </div>
+      <div class="stat">
+        <div class="stat__num">3</div>
+        <div class="stat__label">Industries</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About snippet -->
+<section class="section" style="padding-top: 0;">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="label">About</span>
+      <h2>Background</h2>
+    </div>
+
+    <div style="max-width: 720px;">
+      <p class="fade-up" style="font-size: 1.05rem; margin-bottom: 16px;">
+        I'm a mechanical engineer with a focus on [your specialty — e.g. product design, aerospace structures, robotics]. I hold a B.S. in Mechanical Engineering from [University] and have worked across [industries].
+      </p>
+      <p class="fade-up">
+        My workflow spans concept development, 3D CAD, FEA simulation, and close collaboration with manufacturing teams to ensure designs are not only functional, but buildable.
+      </p>
+      <br>
+      <a href="{{ '/experience' | relative_url }}" class="fade-up" style="font-weight: 500;">View full experience →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured projects snippet -->
+<section class="section" style="background: var(--bg-subtle); padding: 80px 0;">
+  <div class="container">
+    <div class="section-title fade-up">
+      <span class="label">Work</span>
+      <h2>Featured Projects</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card fade-up">
+        <div class="project-card__image" style="background: var(--bg-subtle); min-height: 180px;">
+          <!-- Replace with: <img src="/assets/images/project-1.jpg" alt="Project name" /> -->
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">project image</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__label">Structural Design</div>
+          <h3 class="project-card__title">Project Title Here</h3>
+          <p class="project-card__desc">Brief description of the project, the problem it solved, and your role in the design process.</p>
+          <div class="project-card__tags">
+            <span class="tag">SolidWorks</span>
+            <span class="tag">FEA</span>
+            <span class="tag">Aluminum</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card fade-up">
+        <div class="project-card__image" style="background: var(--bg-subtle); min-height: 180px; display:flex;align-items:center;justify-content:center;">
+          <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">project image</span>
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__label">Mechanism Design</div>
+          <h3 class="project-card__title">Another Project Title</h3>
+          <p class="project-card__desc">Brief description of the project, the problem it solved, and your role in the design process.</p>
+          <div class="project-card__tags">
+            <span class="tag">CATIA</span>
+            <span class="tag">GD&T</span>
+            <span class="tag">Rapid Prototyping</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center;" class="fade-up">
+      <a href="{{ '/projects' | relative_url }}" class="btn btn--outline">See All Projects →</a>
+    </div>
+  </div>
+</section>

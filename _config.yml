@@ -1,0 +1,26 @@
+title: "Vanessa Audrey"
+tagline: "Mechanical Design Engineer"
+description: "Portfolio of mechanical design work, engineering projects, and professional experience."
+baseurl: ""
+url: "https://vanessaudrey.github.io"
+
+author:
+  name: "Vanessa Audrey"
+  email: "vaudrey.me@gmail.com"
+  linkedin: "https://linkedin.com/in/vanessaudrey"
+  github: "https://github.com/vanessaudrey"
+  location: "Inglewood, California"
+
+# Build settings
+markdown: kramdown
+theme: null
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
