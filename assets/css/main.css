@@ -367,6 +367,13 @@ p { color: var(--text-secondary); }
 
 .timeline-item__desc {
   font-size: 0.95rem;
+  padding-left: 16px;
+  margin: 0;
+}
+
+.timeline-item__desc li {
+  margin-bottom: 4px;
+  color: var(--text-secondary);
 }
 
 .timeline-item__tags {
