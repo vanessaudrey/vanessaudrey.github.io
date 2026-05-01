@@ -108,3 +108,43 @@ if (form) {
     }
   });
 }
+
+// --- LIGHTBOX ---
+const lightbox = document.createElement('div');
+lightbox.style.cssText = `
+  display:none; position:fixed; inset:0; z-index:1000;
+  background:rgba(0,0,0,0.92); align-items:center;
+  justify-content:center; cursor:zoom-out;
+`;
+document.body.appendChild(lightbox);
+
+const lightboxImg = document.createElement('img');
+lightboxImg.style.cssText = `
+  max-width:90vw; max-height:90vh; object-fit:contain;
+  box-shadow:0 0 60px rgba(0,0,0,0.8);
+`;
+lightbox.appendChild(lightboxImg);
+
+// Attach to all gallery images
+document.querySelectorAll('.gallery__item img, .project-card__image img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Close on click
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+  document.body.style.overflow = '';
+});
+
+// Close on Escape key
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    lightbox.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+});
