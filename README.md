@@ -88,9 +88,3 @@ Copy a project card block in `projects.html` and fill in:
 - `project-card__desc`: Description
 - `project-card__tags`: Tools/methods used
 - Replace the placeholder div with an `<img>` tag
-
-## Contact Form (Formspree)
-1. Go to https://formspree.io and create a free account
-2. Create a new form → get your endpoint URL
-3. In `contact.html`, change `action="#"` to `action="https://formspree.io/f/yourcode"`
-4. Done — no backend needed!
